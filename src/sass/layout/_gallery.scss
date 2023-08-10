@@ -1,0 +1,12 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    height: auto;
+    margin: 0 5%;
+    padding: 2.5rem;
+    background-color: $colour-secondary;
+    border-radius: 1rem;
+}

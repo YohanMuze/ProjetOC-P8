@@ -1,0 +1,16 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/hero";
+@import "./components/gallery-card";
+@import "./components/collapse";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/gallery";
+@import "./layout/404";
+@import "./layout/collapse-apropos";

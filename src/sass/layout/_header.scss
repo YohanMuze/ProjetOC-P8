@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 5%;
+    &__ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-end;
+    }
+    &__Link {
+        color: $colour-primary;
+    }
+    &__Link:hover {
+        border-bottom: 1px solid $colour-primary;
+    }
+}
+

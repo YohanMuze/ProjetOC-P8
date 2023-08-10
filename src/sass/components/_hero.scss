@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 14rem;
+  margin: 0 5% 2rem;
+  &__img,
+  &__shadow {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+  &__shadow {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.3;
+  }
+  &__caption {
+    position: absolute;
+    font-size: 3rem;
+    color: white;
+    font-weight: normal;
+  }
+}
