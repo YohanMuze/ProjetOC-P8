@@ -98,20 +98,28 @@ button {
   border-radius: 0.4rem;
   text-align: start;
 }
-.collapse__header__icon:hover {
+.collapse__header__icon--rotate {
+  transform: rotate(-0.5turn);
+  transition: transform 250ms;
+  cursor: pointer;
+}
+.collapse__header__icon {
+  transform: rotate(0turn);
+  transition: transform 250ms;
   cursor: pointer;
 }
 .collapse__box {
   background-color: #F6F6F6;
   width: 100%;
   border-radius: 0.4rem;
+  overflow: hidden;
+  transition: height ease-in 250ms;
 }
 .collapse__box__p {
   color: #FF6060;
   font-size: x-large;
   font-weight: 500;
   padding: 1rem;
-  transition: height ease-in 1s;
 }
 
 .is-box-open {
