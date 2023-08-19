@@ -1,26 +1,23 @@
-@keyframes slide {
-  from {
-    height: 0px;
-  }
-  to {
-    min-height: max-content;
-  }
-}
 .collapse {
-  width: 70%;
   &__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: $colour-primary;
     color: white;
-    font-size: xx-large;
-    font-weight: normal;
+    font-size: x-large;
+    font-weight: 500;
     padding: 0.8rem;
     border-radius: 0.4rem;
     text-align: start;
-
-    &__icon:hover {
+    &__icon--rotate {
+      transform: rotate(-0.5turn);
+      transition: transform 250ms;
+      cursor: pointer;
+    }
+    &__icon {
+      transform: rotate(0turn);
+      transition: transform 250ms;
       cursor: pointer;
     }
   }
@@ -28,17 +25,14 @@
     background-color: $colour-secondary;
     width: 100%;
     border-radius: 0.4rem;
+    overflow: hidden;
+    transition: height ease-in 250ms;
 
     &__p {
       color: $colour-primary;
       font-size: x-large;
       font-weight: 500;
       padding: 1rem;
-      transition: height ease-in 1s;
     }
   }
-}
-
-.is-box-open {
-  height: 0;
 }

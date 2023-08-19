@@ -1,0 +1,15 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  &__card {
+    background-color: $colour-primary;
+    color: white;
+    font-size: medium;
+    padding: 0.3rem 1.2rem;
+    border-radius: 1rem;
+    min-width: 7rem;
+  }
+}

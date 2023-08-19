@@ -1,0 +1,30 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 30rem;
+  border-radius: 1rem;
+  &__img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  &__arrow {
+    position: absolute;
+    cursor: pointer;
+    &--prev {
+      left: 10px;
+    }
+    &--next {
+      right: 10px;
+    }
+  }
+  &__state {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 49%;
+    color: white;
+    font-size: large;
+  }
+}
