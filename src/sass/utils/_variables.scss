@@ -1,2 +1,10 @@
-$colour-primary : #FF6060;
-$colour-secondary : #F6F6F6;
+$colour-primary: #ff6060;
+$colour-secondary: #f6f6f6;
+
+/****** map ******/
+
+$breakpoints: (
+  mobile: 800px,
+  desktop: 990px,
+  desktop-xl: 1400px,
+);

@@ -1,19 +1,47 @@
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 5%;
+  &__logo {
+    display: block;
+    @include small-device {
+      display: none;
+    }
+  }
+  &__logo-small {
+    display: none;
+    @include small-device {
+      display: block;
+    }
+  }
+  &__ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 3rem 5%;
-    &__ul {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        align-items: flex-end;
+    gap: 2rem;
+    align-items: flex-end;
+    @include small-device {
+      gap: 1rem;
     }
-    &__Link {
-        color: $colour-primary;
+    &__link {
+      color: $colour-primary;
+      font-size: x-large;
+      &:hover {
+        @include border;
+        @include small-device {
+          @include borderSmall;
+        }
+      }
+      @include small-device {
+        font-size: medium;
+      }
     }
-    &__Link:hover {
-        border-bottom: 1px solid $colour-primary;
-    }
+  }
 }
 
+.border-bottom {
+  @include border;
+  @include small-device {
+    @include borderSmall;
+  }
+}

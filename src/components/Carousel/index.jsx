@@ -13,6 +13,34 @@ export default function Carousel({ arrayImg }) {
     isMany = true;
   }
 
+  function next() {
+    if (picture > length - 1) {
+      updatePicture(0);
+    } else {
+      updatePicture(picture + 1);
+    }
+  }
+
+  function prev() {
+    if (picture === 0) {
+      updatePicture(picture + length);
+    } else {
+      updatePicture(picture - 1);
+    }
+  }
+
+  function nextKeyEnter(e) {
+    if (e.keyCode === 13) {
+      next();
+    }
+  }
+
+  function prevKeyEnter(e) {
+    if (e.keyCode === 13) {
+      prev();
+    }
+  }
+
   return isMany ? (
     <figure className="carousel">
       <img
@@ -24,6 +52,7 @@ export default function Carousel({ arrayImg }) {
         className="carousel__arrow carousel__arrow--prev"
         src={arrowPrev}
         alt="flèche pour afficher l'image précédente"
+        tabIndex={0}
         onClick={() => {
           if (picture === 0) {
             updatePicture(picture + length);
@@ -31,11 +60,13 @@ export default function Carousel({ arrayImg }) {
             updatePicture(picture - 1);
           }
         }}
+        onKeyUp={prevKeyEnter}
       ></img>
       <img
         className="carousel__arrow carousel__arrow--next"
         src={arrowNext}
         alt="flèche pour afficher l'image suivante"
+        tabIndex={0}
         onClick={() => {
           if (picture > length - 1) {
             updatePicture(0);
@@ -43,6 +74,7 @@ export default function Carousel({ arrayImg }) {
             updatePicture(picture + 1);
           }
         }}
+        onKeyUp={nextKeyEnter}
       ></img>
       <p className="carousel__state">
         {picture + 1}/{arrayImg.length}

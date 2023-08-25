@@ -1,24 +1,26 @@
 .footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 10rem;
+  margin-top: 3rem;
+  &__box {
     display: flex;
-    justify-content: center;
-    background-color: black;
-    height: 10rem;
-    margin-top: 3rem;
-    &__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 2rem;
-        padding-bottom: 1.5rem;
-
-        &__logo {
-            height: 2rem;
-            object-fit: scale-down;
-        }
-        &__rights {
-            color: white;
-        }
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    &__logo {
+      height: 2rem;
+      object-fit: scale-down;
     }
-    
+    &__content {
+      @include flex;
+      gap: 0.5rem;
+      &__rights {
+        color: white;
+      }
+    }
+  }
 }

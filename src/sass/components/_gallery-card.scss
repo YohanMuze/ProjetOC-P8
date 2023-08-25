@@ -1,28 +1,34 @@
 .gallery-card {
-    position: relative;
-    height: 20rem;
-    &__img {
-        height: 100%;
-        width: 100%;
-        border-radius: 1rem;
+  position: relative;
+  height: 20rem;
+  &__img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  &__caption {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 50%;
+    color: white;
+    font-size: larger;
+    z-index: 1;
+    @include small-device {
+      font-size: medium;
     }
-    &__caption {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-        width: 50%;
-        color: white;
-        font-size: larger;
-        z-index: 1;
-    }
-    &__shadow {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        box-shadow: inset 0rem -8rem 1rem 0rem rgba(0, 0, 0, 0.95);
-        
-        opacity: 0.4;
-        border-radius: 1rem;
-    }
+  }
+  &__shadow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0rem -8rem 1rem 0rem rgba(0, 0, 0, 0.95);
+
+    opacity: 0.4;
+    border-radius: 1rem;
+  }
+  @include small-device {
+    height: 15rem;
+  }
 }

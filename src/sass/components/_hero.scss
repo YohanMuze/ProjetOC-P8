@@ -5,6 +5,9 @@
   position: relative;
   height: 14rem;
   margin: 0 5% 2rem;
+  @include small-device {
+    height: 18rem;
+  }
   &__img,
   &__shadow {
     height: 100%;
@@ -22,5 +25,9 @@
     font-size: 3rem;
     color: white;
     font-weight: normal;
+    @include small-device {
+      font-size: 2rem;
+      padding: 2rem;
+    }
   }
 }

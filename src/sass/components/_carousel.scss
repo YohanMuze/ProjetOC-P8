@@ -19,6 +19,9 @@
     &--next {
       right: 10px;
     }
+    @include small-device {
+      height: 3rem;
+    }
   }
   &__state {
     position: absolute;
@@ -26,5 +29,8 @@
     left: 49%;
     color: white;
     font-size: large;
+    @include small-device {
+      display: none;
+    }
   }
 }

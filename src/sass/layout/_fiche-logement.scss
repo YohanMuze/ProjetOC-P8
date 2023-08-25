@@ -8,13 +8,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
+    @include small-device {
+      flex-direction: column;
+    }
   }
   &__collapse {
     display: flex;
     justify-content: space-between;
+    @include small-device {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 }
 
 .collapse-logement {
   width: 45%;
+  @include small-device {
+    width: 100%;
+  }
 }

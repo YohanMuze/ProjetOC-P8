@@ -6,7 +6,6 @@
     background-color: $colour-primary;
     color: white;
     font-size: x-large;
-    font-weight: 500;
     padding: 0.8rem;
     border-radius: 0.4rem;
     text-align: start;
@@ -33,6 +32,12 @@
       font-size: x-large;
       font-weight: 500;
       padding: 1rem;
+      @include small-device {
+        font-size: large;
+      }
+      & li {
+        font-weight: 500;
+      }
     }
   }
 }

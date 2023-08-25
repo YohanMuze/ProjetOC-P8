@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function EmptyStar() {
   return (
     <FontAwesomeIcon
-      className="empty-star fa-xl"
+      className="rate-box__empty-star fa-xl"
       icon={faStar}
       aria-hidden="true"
     />
@@ -14,7 +14,7 @@ function EmptyStar() {
 function FullStar() {
   return (
     <FontAwesomeIcon
-      className="filled-star fa-xl"
+      className="rate-box__filled-star fa-xl"
       icon={faStar}
       aria-hidden="true"
     />
