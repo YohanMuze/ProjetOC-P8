@@ -1,0 +1,29 @@
+.host {
+  display: flex;
+  flex-direction: column;
+  &__portrait {
+    display: flex;
+    align-self: end;
+    gap: 1rem;
+    &__name {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem;
+      gap: 0.8rem;
+      @include small-device {
+        padding-top: 0.9rem;
+      }
+      &__p {
+        font-size: larger;
+        margin-top: -0.5rem;
+      }
+    }
+    &__img {
+      border-radius: 50%;
+      height: 5rem;
+      @include small-device {
+        height: 4rem;
+      }
+    }
+  }
+}

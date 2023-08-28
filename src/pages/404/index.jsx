@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-function Page404({ header = false, footer = false }) {
+function Body404() {
   return (
     <>
-      <Header />
       <div className="not-found">
         <h2 className="not-found__title">404</h2>
         <p className="not-found__p">
@@ -15,9 +14,18 @@ function Page404({ header = false, footer = false }) {
           Retourner sur la page d'accueil
         </Link>
       </div>
+    </>
+  );
+}
+
+function Page404({ header = false, footer = false }) {
+  return (
+    <>
+      <Header />
+      <Body404 />
       <Footer />
     </>
   );
 }
 
-export default Page404;
+export { Body404, Page404 };

@@ -6,10 +6,9 @@ import "./sass/style.scss";
 import Home from "./pages/Home/index.jsx";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Page404 from "./pages/404";
+import { Page404 } from "./pages/404";
 import APropos from "./pages/A-Propos";
 import FicheLogement from "./pages/Fiche-Logement";
-import { UrlProvider } from "./components/UrlProvider";
 
 export async function fetchLogementsJSON() {
   const response = await fetch("http://localhost:3000/logements.json");
@@ -20,11 +19,9 @@ export async function fetchLogementsJSON() {
 function Root() {
   return (
     <>
-      <UrlProvider>
-        <Header />
-        <Outlet />
-        <Footer />
-      </UrlProvider>
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   );
 }
@@ -33,7 +30,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <Page404 />, //<Navigate to="/404" replace={true} />,
+    errorElement: <Page404 />,
     children: [
       {
         path: "",

@@ -1,5 +1,4 @@
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ArrowUp from "../../assets/Arrow_Up.png";
 import { useState } from "react";
 import { useRef } from "react";
 
@@ -22,14 +21,15 @@ export default function Collapse({ layout, title, content }) {
       <div className="collapse">
         <div className="collapse__header">
           <p>{title}</p>
-          <FontAwesomeIcon
+          <img
             className={
               open ? "collapse__header__icon--rotate" : "collapse__header__icon"
             }
-            icon={faAngleUp}
+            src={ArrowUp}
             onClick={openCollapse}
             tabIndex={0}
             onKeyUp={onKeyEnter}
+            alt={"cliquer pour faire dérouler"}
           />
         </div>
         <div

@@ -19,7 +19,6 @@ export default function Gallerylayout() {
       ignore = true;
     };
   }, []);
-  console.log(datas);
 
   return (
     <Gallery>

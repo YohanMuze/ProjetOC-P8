@@ -81,10 +81,12 @@ export default function Carousel({ arrayImg }) {
       </p>
     </figure>
   ) : (
-    <img
-      className="carousel__img"
-      src={arrayImg[0]}
-      alt="photographie du logement"
-    ></img>
+    <figure className="carousel">
+      <img
+        className="carousel__img"
+        src={arrayImg[0]}
+        alt="photographie du logement"
+      ></img>
+    </figure>
   );
 }

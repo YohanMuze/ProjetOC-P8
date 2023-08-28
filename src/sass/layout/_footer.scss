@@ -16,8 +16,11 @@
       object-fit: scale-down;
     }
     &__content {
-      @include flex;
+      @include flex(row);
       gap: 0.5rem;
+      @include small-device {
+        @include flex(column);
+      }
       &__rights {
         color: white;
       }
