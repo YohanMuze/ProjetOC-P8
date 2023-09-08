@@ -1,3 +1,6 @@
+import "../../index.scss";
+import "./caption.scss";
+
 function CaptionSkelet({ children }) {
   return <div className="caption">{children}</div>;
 }

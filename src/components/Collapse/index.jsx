@@ -1,3 +1,4 @@
+import "./collapse.scss";
 import ArrowUp from "../../assets/Arrow_Up.png";
 import { useState } from "react";
 import { useRef } from "react";

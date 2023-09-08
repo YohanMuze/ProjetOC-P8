@@ -1,3 +1,4 @@
+import "./footer.scss";
 import KasaLogoWhite from "../../assets/Kasa_Logo_White.png";
 
 function Footer() {

@@ -1,3 +1,4 @@
+import "./header.scss";
 import { Link, NavLink } from "react-router-dom";
 import KasaLogo from "../../assets/Kasa_Logo.png";
 import KasaLogoSmall from "../../assets/Kasa_Logo_Small.png";

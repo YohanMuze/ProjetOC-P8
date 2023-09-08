@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+import "./carousel.scss";
 import { useState } from "react";
 import arrowPrev from "../../assets/Arrow_Back.png";
 import arrowNext from "../../assets/Arrow_Forward.png";

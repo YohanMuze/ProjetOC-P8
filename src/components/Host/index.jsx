@@ -1,3 +1,5 @@
+import "./host.scss";
+
 export default function Host({ firstName, lastName, src }) {
   return (
     <div className="host">

@@ -1,3 +1,5 @@
+import "./rate.scss";
+
 function EmptyStar() {
   return (
     <svg className="rate-box__star" aria-hidden="true">

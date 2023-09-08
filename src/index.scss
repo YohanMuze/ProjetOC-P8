@@ -1,0 +1,61 @@
+/***** variables ****/
+$colour-primary: #ff6060;
+$colour-secondary: #f6f6f6;
+
+/****** map ******/
+
+$breakpoints: (
+  mobile: 800px,
+  desktop: 990px,
+  desktop-xl: 1400px,
+);
+
+/****** Mixin : ******/
+@mixin flex($direction: column, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin border() {
+  border-bottom: 2px solid $colour-primary;
+}
+
+@mixin borderSmall() {
+  border-bottom: 1px solid $colour-primary;
+}
+
+/******** Media Querries *******/
+@mixin small-device {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+
+/***** General CSS *******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  color: $colour-primary;
+  list-style-type: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background-color: $colour-primary;
+}

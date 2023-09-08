@@ -1,3 +1,4 @@
+import "./fiche-logement.scss";
 import Carousel from "../../components/Carousel";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";

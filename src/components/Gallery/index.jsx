@@ -1,3 +1,4 @@
+import "./gallery.scss";
 import { useEffect, useState } from "react";
 import Cards from "../Cards";
 import { fetchLogementsJSON } from "../..";
